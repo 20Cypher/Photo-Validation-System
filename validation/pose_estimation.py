@@ -26,9 +26,8 @@ def check_pose(image_path):
 
     result = {"status": True, "message": "Pose is valid", "checks": {}}
 
-    # **Check Shoulders Visibility**
-    left_shoulder = pose_landmarks[11]  # Left Shoulder
-    right_shoulder = pose_landmarks[12]  # Right Shoulder
+    left_shoulder = pose_landmarks[11]
+    right_shoulder = pose_landmarks[12]
     shoulders_visible = left_shoulder.visibility > 0.6 and right_shoulder.visibility > 0.6
 
     result["checks"]["shoulders_visible"] = shoulders_visible
@@ -36,9 +35,8 @@ def check_pose(image_path):
         result["status"] = False
         result["message"] = "Shoulders not visible"
 
-    # **Check Looking at the Camera**
-    left_eye = face_landmarks[33]  # Left Eye Corner
-    right_eye = face_landmarks[263]  # Right Eye Corner
+    left_eye = face_landmarks[33]
+    right_eye = face_landmarks[263]
     eye_distance = abs(left_eye.x - right_eye.x)
 
     looking_straight = eye_distance > 0.035
@@ -48,9 +46,8 @@ def check_pose(image_path):
         result["status"] = False
         result["message"] = "Not looking directly at the camera"
 
-    # **Check Ears Unobstructed**
-    left_ear = pose_landmarks[7]  # Left Ear
-    right_ear = pose_landmarks[8]  # Right Ear
+    left_ear = pose_landmarks[7]
+    right_ear = pose_landmarks[8]
     ears_visible = left_ear.visibility > 0.5 and right_ear.visibility > 0.5
 
     result["checks"]["ears_unobstructed"] = ears_visible

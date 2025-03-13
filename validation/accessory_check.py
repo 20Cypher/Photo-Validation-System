@@ -1,7 +1,12 @@
 from together import Together
 import base64
+from dotenv import load_dotenv
+import os
 
-client = Together(api_key="dc764cc198d0f6677db81dbae9dc8ac72fc28136ba629b0e43a4e51979d9d830")
+load_dotenv()
+api_key = os.getenv("TOGETHER_API_KEY")
+
+client = Together(api_key=api_key)
 
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
@@ -16,7 +21,7 @@ def detect_accessories(image_path):
     - Are there any glasses (prescription glasses, sunglasses)?
     - Is there any headwear (hats, caps, headscarves, or any other head coverings)?
 
-    Provide a clear Yes/No answer for each. Make sure your assessment are always correct since it holds high importance
+    Provide a clear Yes/No answer for each. ake sure your assessment are always correct since it holds high importance
     """
 
     response = client.chat.completions.create(
