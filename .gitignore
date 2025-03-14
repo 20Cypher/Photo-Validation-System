@@ -1,15 +1,3 @@
 .env
 
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-*.log
-logs/
-debug.log
-
-.vscode/
-.idea/
-
-Object_Detection_YOLOv8.ipynb
