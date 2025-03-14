@@ -18,9 +18,6 @@ The **Photo Validation System** is an automated tool designed to validate ID pho
 
 ---
 
-
-
-
 ## **Setup & Installation**
 
 ### **Clone the Repository**
@@ -49,8 +46,6 @@ streamlit run app.py
 - API will be available at http://127.0.0.1:8000/.
 - The interface will open, allowing users to upload images for validation.
 
-
-
 ## Overview of the Approach
 
 The **Photo Validation System** follows a modular approach, leveraging computer vision and machine learning models to validate images based on official ID photo requirements. The system performs the following checks:
@@ -73,9 +68,9 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 - **MediaPipe** – Pose estimation
 - **Meta-Llama 3.2 Vision Model** – Accessory detection (temporary solution)
 
+### Example Test Case of Photo Validation System
 
 ![Test case of a running example](test_case.jpg)
-
 
 ## Description of Components & How They Work Together
 
@@ -113,8 +108,6 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 - Due to accuracy issues, **Meta-Llama 3.2 (Vision-Language Model) was used instead**.
 - Future improvements involve **fine-tuning a dedicated YOLOv8 model** to replace this approach.
 
-
-
 ## Known Limitations
 
 ### 1. Computer Vision-Based Accessory Detection Was Inaccurate
@@ -137,8 +130,6 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 
 - **Issue:** The system assumes a **single face** in the image.
 - **Limitation:** If multiple faces are detected, it does not filter out irrelevant ones.
-
-
 
 ## Future Improvements (If Given More Time)
 
@@ -166,4 +157,3 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 
 - **Approach:** Integrate a **streaming feature** for real-time validation.
 - **Benefit:** Can be used in **live photo booths or online registration portals**.
-
