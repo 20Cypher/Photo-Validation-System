@@ -51,7 +51,6 @@ streamlit run app.py
 
 
 
-
 ## Overview of the Approach
 
 The **Photo Validation System** follows a modular approach, leveraging computer vision and machine learning models to validate images based on official ID photo requirements. The system performs the following checks:
@@ -75,6 +74,7 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 - **Meta-Llama 3.2 Vision Model** – Accessory detection (temporary solution)
 
 
+![Test case of a running example](test_case.jpg)
 
 
 ## Description of Components & How They Work Together
@@ -166,3 +166,4 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 
 - **Approach:** Integrate a **streaming feature** for real-time validation.
 - **Benefit:** Can be used in **live photo booths or online registration portals**.
+
