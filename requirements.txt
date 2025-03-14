@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+streamlit
+opencv-python
+numpy
+torch
+facenet-pytorch
+mtcnn
+retinaface
+mediapipe
+deepface
+python-dotenv
+requests
+together
