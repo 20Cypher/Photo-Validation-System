@@ -126,10 +126,11 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 - **Issue:** Some models (e.g., **MTCNN, RetinaFace**) are computationally expensive.
 - **Limitation:** Slower validation times, especially for high-resolution images.
 
-### 4. Handling Multiple Faces
+### 4. Not Yet Optimized for Production Use
 
-- **Issue:** The system assumes a **single face** in the image.
-- **Limitation:** If multiple faces are detected, it does not filter out irrelevant ones.
+- **Issue:** The current implementation lacks the accuracy and efficiency required for large-scale production deployment.
+- **Limitation:** The system needs further **fine-tuning** and **optimization**, especially for reducing false positives in accessory detection and improving real-time performance.
+
 
 ## Future Improvements (If Given More Time)
 
@@ -138,22 +139,12 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 - **Approach:** Fine-tune a **YOLOv8-based object detection model** for accessories.
 - **Benefit:** Eliminates reliance on Vision-Language Models, reducing cost.
 
-### 2. Enhance Background Validation
+### 2. Enhance Validation
 
-- **Approach:** Implement a **deep learning segmentation model (e.g., U-Net)**.
-- **Benefit:** Improves robustness against varying lighting conditions.
+- **Approach:** Implement a **deep learning segmentation model**.
+- **Benefit:** Improves robustness against a more varied dataset.
 
-### 3. Speed Optimization for Face & Pose Detection
+## 3. Improve User Interface
 
-- **Approach:** Convert models to **ONNX** runtime for optimized inference.
-- **Benefit:** Reduces computation time without sacrificing accuracy.
-
-### 4. Multi-Face Handling
-
-- **Approach:** Process only the **largest detected face** when multiple faces are present.
-- **Benefit:** Ensures validation remains focused on the correct subject.
-
-### 5. Extend to Real-Time Validation
-
-- **Approach:** Integrate a **streaming feature** for real-time validation.
-- **Benefit:** Can be used in **live photo booths or online registration portals**.
+- **Approach:** Improve the user interface by implementing better frontend techniques.
+- **Benefit:** Improves user experience
