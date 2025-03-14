@@ -4,12 +4,12 @@ The **Photo Validation System** is an automated tool designed to validate ID pho
 
 ## 🚀 Features
 
-✅ **Face Detection** – Ensures a face is present in the image.
-✅ **Dimension Validation** – Ensures the image size is exactly **413x531 pixels**.
-✅ **Background Check** – Confirms the background is white.
-✅ **Expression Analysis** – Checks for a neutral expression (no smiling or teeth showing).  
-✅ **Pose Estimation** – Verifies direct gaze, visible shoulders, and unobstructed ears.  
-✅ **Accessory Detection** – Identifies whether glasses or headwear are present.  
+✅ **Face Detection** – Ensures a face is present in the image. \n
+✅ **Dimension Validation** – Ensures the image size is exactly **413x531 pixels**. \n
+✅ **Background Check** – Confirms the background is white. \n
+✅ **Expression Analysis** – Checks for a neutral expression (no smiling or teeth showing).  \n
+✅ **Pose Estimation** – Verifies direct gaze, visible shoulders, and unobstructed ears.  \n
+✅ **Accessory Detection** – Identifies whether glasses or headwear are present.  \n
 
 ---
 
