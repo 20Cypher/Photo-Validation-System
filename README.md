@@ -129,8 +129,6 @@ The **Photo Validation System** follows a modular approach, leveraging computer 
 
 ## 🔄 Future Improvements (If Given More Time)
 
----
-
 ### ✅ 1. Improve Accessory Detection Without External APIs
 
 - **Approach:** Fine-tune a **YOLOv8-based object detection model** for accessories.
