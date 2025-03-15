@@ -31,7 +31,7 @@ cd vfs-task
 
 ```bash
 pip install -r requirements.txt
-
+pip install retinaface --no-deps 
 TOGETHER_API_KEY=your_api_key_here
 ```
 
