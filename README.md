@@ -24,7 +24,7 @@ The **Photo Validation System** is an automated tool designed to validate ID pho
 
 ```bash
 git clone <repository-url>
-cd vfs-task
+cd Photo Validation System
 ```
 
 ### **Install Dependencies and Set Up API Key for Accessory Detection**
